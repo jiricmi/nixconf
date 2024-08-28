@@ -27,6 +27,13 @@
       "jiricmi" = import ./home.nix;   
     };
   };
+
+  # Bluetooth
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+  };
+  services.blueman.enable = true;
  
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
