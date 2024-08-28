@@ -1,6 +1,7 @@
 { config, pkgs, inputs, ...}
 {
   programs.hyprland = {
+    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
     enable = true;
     xwayland.enable = true;
   };

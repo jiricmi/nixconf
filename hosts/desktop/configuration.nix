@@ -5,7 +5,7 @@
     [ 
       ./hardware-configuration.nix
       ./../../modules/base.nix
-      ./../../modules/DE/desktop_env_setup.nix
+      ./../../modules/hyprland.nix
       inputs.home-manager.nixosModules.home-manager
     ];
 
