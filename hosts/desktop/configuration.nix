@@ -33,7 +33,6 @@
     neovim
     kitty
     brave
-    git
   ];
 
   system.stateVersion = "24.05";

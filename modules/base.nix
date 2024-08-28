@@ -3,7 +3,6 @@
 {
   networking.networkmanager.enable = true;
 
-
   time.timeZone = "Europe/Prague";
 
 
@@ -40,5 +39,10 @@
     pulse.enable = true;
     jack.enable = true;
   };
+
+  # base packages
+  environment.systemPackages = with pkgs; [
+    git
+  ];
 
 }

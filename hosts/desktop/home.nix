@@ -3,6 +3,12 @@
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
+
+  import = [
+    ./../../modules/hyprland-setup.nix
+  ];
+
+
   home.username = "jiricmi";
   home.homeDirectory = "/home/jiricmi";
 
@@ -15,6 +21,7 @@
   # release notes.
   home.stateVersion = "24.05"; # Please read the comment before changing.
 
+  
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
