@@ -28,21 +28,6 @@
     };
   };
  
-  # Hyprland
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
-
-  environment.sessionVariables = {
-    WLR_NO_HARDWARE_CURSORS = "1";
-    NIXOS_OZONE_WL = "1";
-  };
-
-  hardware = {
-    graphics.enable = true;
-  };
-
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
     neovim
