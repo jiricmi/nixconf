@@ -1,6 +1,7 @@
-{ config, pkgs, inputs, ...}
+{ config, pkgs, inputs, ...}:
 {
   programs.hyprland = {
+    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
     enable = true;
     xwayland.enable = true;
   };
@@ -12,5 +13,10 @@
 
   hardware = {
     graphics.enable = true;
+  };
+
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
 }

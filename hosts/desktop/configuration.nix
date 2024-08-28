@@ -5,7 +5,7 @@
     [ 
       ./hardware-configuration.nix
       ./../../modules/base.nix
-      ./../../modules/DE/desktop_env_setup.nix
+      ./../../modules/hyprland
       inputs.home-manager.nixosModules.home-manager
     ];
 
@@ -33,7 +33,6 @@
     neovim
     kitty
     brave
-    git
   ];
 
   system.stateVersion = "24.05";
