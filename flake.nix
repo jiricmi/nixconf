@@ -10,6 +10,13 @@
     };
     
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+
+    dotfiles = {
+      url = "github:fpiribauer/dotfiles";
+      flake = false;
+    };
+
+    nix-colors.url = "github:misterio77/nix-colors";
   };
 
   outputs = { nixpkgs, home-manager, ... } @ inputs: {

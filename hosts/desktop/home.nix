@@ -4,8 +4,9 @@
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
 
-  import = [
-    ./../../modules/hyprland-setup.nix
+  imports = [
+    ./../../modules/hyprland/settings.nix
+    ./../../modules/waybar
   ];
 
 
