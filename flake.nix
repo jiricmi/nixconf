@@ -20,6 +20,9 @@
     };
 
     nix-colors.url = "github:misterio77/nix-colors";
+
+    stylix.url = "github:danth/stylix";
+
   };
 
   outputs = { nixpkgs, home-manager, ... } @ inputs: {

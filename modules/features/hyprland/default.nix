@@ -20,7 +20,9 @@
     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
 
-  environment.systemPackages = [
-    inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
+  environment.systemPackages = with pkgs; [
+   pavucontrol
+   pamixer
+   wlogout
   ];
 }

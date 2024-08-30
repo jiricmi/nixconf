@@ -13,8 +13,6 @@ in {
     enable = true;
     settings = {
       env = [
-        "HYPRCURSOR_SIZE,24"
-	"HYPRCURSOR_THEME,rose-pine-hyprcursor"
       ];
 
 
@@ -33,11 +31,13 @@ in {
         force_default_wallpaper = 0;
       };
 
-
       general = {
         gaps_in = 5;
-	gaps_out = 10;
-	border_size = 2;
+        gaps_out = 10;
+        border_size = 2;
+        "col.active_border" = lib.mkForce "rgba(${config.stylix.base16Scheme.base0E}ff) rgba(${config.stylix.base16Scheme.base09}ff) 60deg";
+        "col.inactive_border" = lib.mkForce "rgba(${config.stylix.base16Scheme.base00}ff)";
+        layout = "dwindle";
       };
 
 
@@ -58,7 +58,7 @@ in {
             "border, 1, 10, default"
             "borderangle, 1, 8, default"
             "fade, 1, 7, default"
-            "workspaces, 1, 3, myBezier, fade"
+            "workspaces, 1, 6, default"
           ];
         };
 

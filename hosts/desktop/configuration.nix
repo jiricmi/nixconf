@@ -30,8 +30,6 @@
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
     neovim
-    kitty
-    brave
   ];
 
   system.stateVersion = "24.05";
