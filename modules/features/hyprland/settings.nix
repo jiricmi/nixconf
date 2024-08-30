@@ -102,6 +102,11 @@ in {
         "$mainMod, mouse:273, resizewindow"
       ];
 
+      bindl = [
+        ", switch:off:Lid Switch,exec,hyprctl keyword monitor \"eDP-1, preferred, auto, auto\""
+        ", switch:on:Lid Switch,exec,hyprctl keyword monitor \"eDP-1, disable\""
+      ];
+
      exec-once = exec-once;
     };
   };

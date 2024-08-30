@@ -4,6 +4,7 @@
     ./../features/hyprland/settings.nix
     ./../features/waybar
     ./../features/rofi
+    ./../features/wlogout
     ./../features/btop.nix
   ];
 
