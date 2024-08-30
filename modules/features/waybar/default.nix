@@ -41,6 +41,7 @@
       "pulseaudio#microphone"
       "pulseaudio"
       "custom/battery"
+      "battery"
       "custom/power"
     ];
     modules-center = [
@@ -94,6 +95,17 @@
       tooltip-format = ''
         <span size='9pt' font='WenQuanYi Zen Hei Mono'>{calendar}</span>'';
       interval = 1;
+    };
+
+    battery = {
+        states = {
+            "warning" = 30;
+            "critical" = 15;
+        };
+        format = "{capacity}% {icon}";
+        format-charging = "  {capacity}%";
+        format-plugged = "  {capacity}%";
+        format-alt = "{time} {icon}";
     };
 
     cpu = {
@@ -224,6 +236,22 @@
         animation: gradient_f 20s ease-in infinite;
         transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
     }
+    
+    #battery.charging,
+    #battery.plugged {
+      color: @activegreen;
+    }
+
+    #battery.critical:not(.charging) {
+      background-color: @alert;
+      color: @fg;
+      animation-name: blink;
+      animation-duration: 0.5s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
 
     #cpu,
     #memory,

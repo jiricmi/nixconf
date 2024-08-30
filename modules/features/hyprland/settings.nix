@@ -14,7 +14,11 @@ in {
     settings = {
       env = [
       ];
-
+      
+      monitor = [
+        "desc:BOE 0x0791, preferred, auto, 1"
+	", prefered, auto, 1"
+      ];
 
       input = {
         kb_layout = "us";
@@ -103,7 +107,7 @@ in {
       ];
 
       bindl = [
-        ", switch:off:Lid Switch,exec,hyprctl keyword monitor \"eDP-1, preferred, auto, auto\""
+        ", switch:off:Lid Switch,exec,hyprctl keyword monitor \"eDP-1, preferred, auto, 1\""
         ", switch:on:Lid Switch,exec,hyprctl keyword monitor \"eDP-1, disable\""
       ];
 

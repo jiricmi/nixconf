@@ -28,6 +28,9 @@
     };
   };
 
+  services.logind.lidSwitch = "ignore";
+
+
   # Bluetooth
   hardware.bluetooth = {
     enable = true;
