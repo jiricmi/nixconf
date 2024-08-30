@@ -4,8 +4,7 @@
   imports =
     [ 
       ./hardware-configuration.nix
-      ./../../modules/base.nix
-      ./../../modules/hyprland
+      ./../../modules/bundles/desktop.nix
       inputs.home-manager.nixosModules.home-manager
     ];
 
