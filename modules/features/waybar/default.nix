@@ -102,9 +102,9 @@
             "warning" = 30;
             "critical" = 15;
         };
-        format = "{capacity}% {icon}";
-        format-charging = "  {capacity}%";
-        format-plugged = "  {capacity}%";
+        format = "   {capacity}%";
+        format-charging = "   {capacity}%";
+        format-plugged = "   {capacity}%";
         format-alt = "{time} {icon}";
     };
 
@@ -129,7 +129,7 @@
 
     "hyprland/language" = {
       format = " {}";
-      format-cs = "cesky";
+      format-cs = "česky";
       format-en = "english";
     };
 
@@ -237,13 +237,17 @@
         transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
     }
     
+    #battery {
+      color: @green_1;
+    }
+
     #battery.charging,
     #battery.plugged {
-      color: @activegreen;
+      color: @green_1;
     }
 
     #battery.critical:not(.charging) {
-      background-color: @alert;
+      background-color: @red_1;
       color: @fg;
       animation-name: blink;
       animation-duration: 0.5s;

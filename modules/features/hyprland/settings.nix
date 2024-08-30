@@ -21,10 +21,10 @@ in {
       ];
 
       input = {
-        kb_layout = "us";
-	kb_variant = "";
+        kb_layout = "us,cz";
+	kb_variant = ",qwerty";
 	kb_model = "";
-	kb_options = "";
+	kb_options = "grp:alt_shift_toggle";
 	kb_rules = "";
 	follow_mouse = 1;
         sensitivity = 0;
