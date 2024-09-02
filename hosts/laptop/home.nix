@@ -24,10 +24,7 @@
 
   home.sessionVariables = {
     EDITOR = "nvim";
-<<<<<<< Updated upstream
-=======
     TERMINAL = "kitty";
->>>>>>> Stashed changes
   };
 
   programs.home-manager.enable = true;
