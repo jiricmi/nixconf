@@ -7,7 +7,9 @@
     ./../features/wlogout
     ./../features/btop.nix
     ./../features/git.nix
-  ];
+    inputs.nixvim.homeManagerModules.nixvim
+    ./../features/nixvim 
+   ];
 
   stylix.enable = true;
 
