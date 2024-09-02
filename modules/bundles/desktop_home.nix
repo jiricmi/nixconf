@@ -6,6 +6,7 @@
     ./../features/rofi
     ./../features/wlogout
     ./../features/btop.nix
+    ./../features/git.nix
   ];
 
   stylix.enable = true;
