@@ -5,5 +5,7 @@
     ./../features/hyprland
     ./../features/stylix
     ./../features/fonts.nix
+    ./../features/zsh
   ];
+
 }
