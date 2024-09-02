@@ -4,7 +4,7 @@
     enable = true;
     defaultEditor = true;
     
-    options = {
+    opts = {
       number = true;
       relativenumber = true;
       shiftwidth = 2;
@@ -26,7 +26,7 @@
       };
     };
 
-    plugins.nvim-cmp = {
+    plugins.cmp = {
       enable = true;
       autoEnableSources = true;
     };

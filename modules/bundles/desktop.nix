@@ -8,4 +8,7 @@
     ./../features/zsh
   ];
 
+  environment.systemPackages = with pkgs; [
+    openvpn
+  ];
 }
