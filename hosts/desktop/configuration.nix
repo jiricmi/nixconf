@@ -26,10 +26,11 @@
       "jiricmi" = import ./home.nix;   
     };
   };
+
+  environment.variables.EDITOR = "nvim";
  
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
-    neovim
   ];
 
   system.stateVersion = "24.05";

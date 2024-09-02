@@ -37,6 +37,8 @@
     powerOnBoot = true;
   };
   services.blueman.enable = true;
+
+  environment.variables.EDITOR = "nvim";
  
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
