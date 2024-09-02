@@ -9,8 +9,8 @@
     ./../features/git.nix
     inputs.nixvim.homeManagerModules.nixvim
     ./../features/nixvim 
-   ];
-
+    ./../features/lf
+  ];
   stylix.enable = true;
 
 }

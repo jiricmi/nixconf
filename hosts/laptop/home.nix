@@ -24,6 +24,7 @@
 
   home.sessionVariables = {
     EDITOR = "nvim";
+    TERMINAL = "kitty";
   };
 
   programs.home-manager.enable = true;

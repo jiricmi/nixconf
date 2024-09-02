@@ -62,7 +62,8 @@
   #  /etc/profiles/per-user/jiricmi/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    EDITOR = "nvim";
+    TERMINAL = "kitty";
   };
 
   # Let Home Manager install and manage itself.
