@@ -16,7 +16,7 @@
     brave
     kitty
     teams-for-linux
-    
+    thunderbird
   ];
 
   home.file = {

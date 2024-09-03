@@ -28,6 +28,8 @@
     signal-desktop
     brave
     kitty
+    teams-for-linux
+    thunderbird
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
