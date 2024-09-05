@@ -76,6 +76,7 @@ in {
         "$mainMod, B, exec, brave"
 	"$mainMod, M, exit"
 	"$mainMod, V, togglefloating"
+  ", Print, exec, grim -g \"$(slurp -d)\" - | wl-copy"
 
 	# Move focus window
 	"$mainMod, left, movefocus, l"

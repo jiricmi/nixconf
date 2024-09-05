@@ -7,7 +7,7 @@ _: {
     ./file_types.nix
 
     # Themes
-    ./plugins/themes/default.nix
+    #./plugins/themes/default.nix
 
     # Completion
     ./plugins/cmp/cmp.nix
@@ -34,7 +34,6 @@ _: {
 
     # LSP and formatting
     ./plugins/lsp/lsp.nix
-    ./plugins/lsp/conform.nix
     ./plugins/lsp/fidget.nix
 
     # # Git

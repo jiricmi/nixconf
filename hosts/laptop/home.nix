@@ -1,13 +1,18 @@
-{ config, pkgs, lib, inputs, ... }:
-
 {
+  config,
+  pkgs,
+  lib,
+  inputs,
+  ...
+}: {
   imports = [
     ./../../modules/bundles/desktop_home.nix
   ];
 
+  nixpkgs.config.allowUnfree = true;
+
   home.username = "jiricmi";
   home.homeDirectory = "/home/jiricmi";
-  
 
   home.stateVersion = "24.05"; # Please read the comment before changing.
 
@@ -17,6 +22,7 @@
     kitty
     teams-for-linux
     thunderbird
+    jetbrains-toolbox
   ];
 
   home.file = {

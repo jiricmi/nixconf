@@ -23,5 +23,8 @@
   environment.systemPackages = with pkgs; [
    pavucontrol
    pamixer
+   slurp
+   wl-clipboard
+   grim
   ];
 }
