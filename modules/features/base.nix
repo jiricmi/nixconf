@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
   networking.networkmanager.enable = true;
@@ -24,6 +24,8 @@
     layout = "us";
     variant = "";
   };
+
+  services.printing.enable = true;
 
   # Experimental features
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
