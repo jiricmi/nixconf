@@ -1,5 +1,4 @@
 {
-  config,
   pkgs,
   inputs,
   ...
@@ -20,7 +19,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’
   users.users.jiricmi = {
     isNormalUser = true;
-    extraGroups = ["networkmanager" "wheel" "audio"];
+    extraGroups = ["networkmanager" "wheel" "audio" "docker"];
   };
 
   home-manager = {

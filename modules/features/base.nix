@@ -27,6 +27,8 @@
 
   services.printing.enable = true;
 
+  virtualisation.docker.enable = true;
+
   # Experimental features
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -45,6 +47,7 @@
   # base packages
   environment.systemPackages = with pkgs; [
     git
+    docker-compose
   ];
 
 }

@@ -22,7 +22,7 @@
     kitty
     teams-for-linux
     thunderbird
-    jetbrains-toolbox
+    jetbrains.datagrip
   ];
 
   home.file = {
