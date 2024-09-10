@@ -28,11 +28,11 @@
       "jiricmi" = import ./home.nix;
     };
   };
-  networking.hosts = {
-    "172.18.1.13" = ["gitlab.int.netio.eu"];
-    "172.18.1.14" = ["hades.int.netio.eu"];
-    "172.18.1.16" = ["odoo.int.netio.eu"];
-  };
+  #networking.hosts = {
+  #   "172.18.1.13" = ["gitlab.int.netio.eu"];
+  #  "172.18.1.14" = ["hades.int.netio.eu"];
+  #  "172.18.1.16" = ["odoo.int.netio.eu"];
+  #};
   services.logind.lidSwitch = "ignore";
 
   # Bluetooth
