@@ -52,6 +52,6 @@ _: {
     viAlias = true;
     vimAlias = true;
     colorschemes.catppuccin.enable = true;
-
   };
+  programs.lazygit.enable = true;
 }
