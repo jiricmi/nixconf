@@ -11,7 +11,6 @@ _: {
 
     # Completion
     ./plugins/cmp/cmp.nix
-    ./plugins/cmp/lspkind.nix
     ./plugins/cmp/autopairs.nix
     ./plugins/cmp/schemastore.nix
 
@@ -35,10 +34,12 @@ _: {
     # LSP and formatting
     ./plugins/lsp/lsp.nix
     ./plugins/lsp/fidget.nix
+    ./plugins/lsp/conform.nix
 
     # # Git
     ./plugins/git/lazygit.nix
     ./plugins/git/gitsigns.nix
+    ./plugins/git/gitblame.nix
 
     #   # Utils
     ./plugins/utils/telescope.nix
@@ -46,6 +47,7 @@ _: {
     ./plugins/utils/extra_plugins.nix
     ./plugins/utils/markdown-preview.nix
     ./plugins/utils/toggleterm.nix
+    ./plugins/utils/autosave.nix
   ];
   programs.nixvim = {
     enable = true;

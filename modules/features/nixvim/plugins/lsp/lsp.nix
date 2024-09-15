@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   programs.nixvim = {
     plugins = {
+      lsp-format = {enable = true;};
       helm = {enable = true;};
       lsp = {
         enable = true;
@@ -16,6 +17,11 @@
           tsserver = {enable = true;};
           ansiblels = {enable = true;};
           jsonls = {enable = true;};
+          rust-analyzer = {
+            enable = true;
+            installCargo = true;
+            installRustc = true;
+          };
           helm-ls = {
             enable = true;
             extraOptions = {
