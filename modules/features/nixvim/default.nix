@@ -48,6 +48,7 @@ _: {
     ./plugins/utils/markdown-preview.nix
     ./plugins/utils/toggleterm.nix
     ./plugins/utils/autosave.nix
+    ./plugins/utils/obsidian.nix
   ];
   programs.nixvim = {
     enable = true;

@@ -23,6 +23,7 @@
     teams-for-linux
     thunderbird
     jetbrains.datagrip
+    obsidian
   ];
 
   home.file = {
