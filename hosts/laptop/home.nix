@@ -24,6 +24,7 @@
     thunderbird
     jetbrains.datagrip
     obsidian
+    keepassxc
   ];
 
   home.file = {

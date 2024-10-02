@@ -23,6 +23,7 @@
     teams-for-linux
     thunderbird
     obsidian
+    keepassxc
   ];
 
   home.sessionVariables = {
