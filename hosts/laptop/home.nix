@@ -25,6 +25,7 @@
     jetbrains.datagrip
     obsidian
     keepassxc
+    okular
   ];
 
   home.file = {

@@ -24,6 +24,7 @@
     thunderbird
     obsidian
     keepassxc
+    okular
   ];
 
   home.sessionVariables = {
