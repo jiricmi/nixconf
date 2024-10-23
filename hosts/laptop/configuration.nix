@@ -19,7 +19,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’
   users.users.jiricmi = {
     isNormalUser = true;
-    extraGroups = ["networkmanager" "wheel" "audio" "docker"];
+    extraGroups = ["networkmanager" "wheel" "audio" "docker" "libvirtd" ];
   };
 
   home-manager = {
@@ -28,12 +28,15 @@
       "jiricmi" = import ./home.nix;
     };
   };
-  #networking.hosts = {
-  #   "172.18.1.13" = ["gitlab.int.netio.eu"];
-  #  "172.18.1.14" = ["hades.int.netio.eu"];
-  #  "172.18.1.16" = ["odoo.int.netio.eu"];
-  #};
+  networking.hosts = {
+     "172.18.1.13" = ["gitlab.int.netio.eu"];
+    "172.18.1.14" = ["hades.int.netio.eu"];
+    "172.18.1.16" = ["odoo.int.netio.eu"];
+  };
   services.logind.lidSwitch = "ignore";
+
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
 
   # Bluetooth
   hardware.bluetooth = {
