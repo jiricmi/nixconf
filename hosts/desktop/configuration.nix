@@ -17,7 +17,7 @@
  # Define a user account. Don't forget to set a password with ‘passwd’
   users.users.jiricmi = {
     isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" "audio" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "audio" "docker" "dialout"];
   };
 
   home-manager = {
@@ -30,8 +30,7 @@
   environment.variables.EDITOR = "nvim";
  
   # List packages installed in system profile. To search, run:
-  environment.systemPackages = with pkgs; [
-  ];
+  environment.systemPackages = with pkgs; [];
 
   system.stateVersion = "24.05";
 }
