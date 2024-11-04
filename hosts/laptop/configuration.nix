@@ -12,6 +12,7 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.supportedFilesystems = [ "ntfs" ];
 
   boot.initrd.luks.devices."luks-cfbafba6-62bd-47ea-8fef-7631551bc4d4".device = "/dev/disk/by-uuid/cfbafba6-62bd-47ea-8fef-7631551bc4d4";
   networking.hostName = "jiricmi-laptop";
