@@ -20,6 +20,9 @@
     extraGroups = [ "networkmanager" "wheel" "audio" "docker" "dialout"];
   };
 
+
+  services.trezord.enable = true;
+
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users = {

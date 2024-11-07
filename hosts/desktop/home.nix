@@ -25,6 +25,7 @@
     obsidian
     keepassxc
     okular
+    trezor-suite
   ];
 
   home.sessionVariables = {
