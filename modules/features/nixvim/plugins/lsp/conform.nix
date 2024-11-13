@@ -48,7 +48,7 @@
               "prettier"
             ]
           ];
-          python = [ "black" ];
+          python = [ "black" "isort"];
           lua = [ "stylua" ];
           nix = [ "nixfmt" ];
           c = [ "clang_format" ];
