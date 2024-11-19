@@ -9,7 +9,7 @@
             mode = "buffers";
 
             close_icon = " ";
-            buffer_close_icon = "󰱝 ";
+            buffer_close_icon = "󰱝";
             modified_icon = "󰔯 ";
 
             offsets = [

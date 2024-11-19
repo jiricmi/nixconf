@@ -17,11 +17,14 @@
           tsserver = {enable = true;};
           ansiblels = {enable = true;};
           jsonls = {enable = true;};
+          julials = {enable = true;};
           rust-analyzer = {
             enable = true;
             installCargo = true;
             installRustc = true;
           };
+          clangd = {enable = true;};
+          cmake = {enable = true;};
           helm-ls = {
             enable = true;
             extraOptions = {

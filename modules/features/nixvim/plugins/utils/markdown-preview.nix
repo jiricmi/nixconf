@@ -4,7 +4,7 @@ _: {
       markdown-preview = {
         enable = true;
         settings = {
-          browser = "firefox";
+          browser = "brave";
           echo_preview_url = true;
           port = "6969";
           preview_options = {
