@@ -51,6 +51,7 @@
           python = [ "black" "isort"];
           lua = [ "stylua" ];
           nix = [ "nixfmt" ];
+          rust = [ "rustfmt" ];
           c = [ "clang_format" ];
           markdown = [
             [
@@ -99,6 +100,9 @@
           };
           bicep = {
             command = "${lib.getExe pkgs.bicep}";
+          };
+          rustfmt = {
+            command = "${lib.getExe pkgs.rustfmt}";
           };
           clang_format = {
             command = "${pkgs.clang-tools}/bin/clang-format"; 
