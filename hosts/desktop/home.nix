@@ -26,6 +26,10 @@
     keepassxc
     okular
     trezor-suite
+    unzip
+    zip
+    putty
+    stm32cubemx
   ];
 
   home.sessionVariables = {

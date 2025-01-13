@@ -26,6 +26,10 @@
     obsidian
     keepassxc
     okular
+    unzip
+    zip
+    putty
+    stm32cubemx
   ];
 
   home.file = {
