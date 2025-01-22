@@ -20,7 +20,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’
   users.users.jiricmi = {
     isNormalUser = true;
-    extraGroups = ["networkmanager" "wheel" "audio" "docker" "libvirtd" ];
+    extraGroups = ["networkmanager" "wheel" "audio" "docker" "libvirtd" "dialout"];
   };
 
   home-manager = {
