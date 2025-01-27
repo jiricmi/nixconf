@@ -26,27 +26,30 @@
         base0F = "f2cdcd"; # flamingo
     };
 
-    fonts = {
-      monospace = {
-        package = pkgs.nerdfonts.override {fonts = ["JetBrainsMono"];};
-        name = "JetBrainsMono Nerd Font Mono";
-      };
-      sansSerif = {
-        package = pkgs.dejavu_fonts;
-        name = "DejaVu Sans";
-      };
-      serif = {
-        package = pkgs.dejavu_fonts;
-        name = "DejaVu Serif";
-      };
+fonts = {
+  monospace = {
+    package = pkgs.nerd-fonts.jetbrains-mono;
+    name = "JetBrainsMono Nerd Font Mono";
+  };
+  sansSerif = {
+    package = pkgs.dejavu_fonts;
+    name = "DejaVu Sans";
+  };
+  serif = {
+    package = pkgs.dejavu_fonts;
+    name = "DejaVu Serif";
+  };
 
-      sizes = {
-        applications = 12;
-        terminal = 15;
-        desktop = 10;
-        popups = 10;
-      };
-    };
+  sizes = {
+    applications = 12;
+    terminal = 15;
+    desktop = 10;
+    popups = 10;
+  };
+};
+
+
+
 
     cursor.name = "Bibata-Modern-Ice";
     cursor.package = pkgs.bibata-cursors;

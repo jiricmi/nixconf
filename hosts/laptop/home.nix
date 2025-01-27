@@ -4,7 +4,8 @@
   lib,
   inputs,
   ...
-}: {
+}:
+{
   imports = [
     ./../../modules/bundles/desktop_home.nix
   ];
@@ -22,14 +23,16 @@
     kitty
     teams-for-linux
     thunderbird
-    jetbrains.datagrip
     obsidian
     keepassxc
     okular
+    trezor-suite
     unzip
     zip
     putty
     stm32cubemx
+    inputs.nixvim.packages.x86_64-linux.default
+    lazygit
   ];
 
   home.file = {

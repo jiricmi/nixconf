@@ -24,8 +24,7 @@
     stylix.url = "github:danth/stylix";
 
     nixvim = {
-        url = "github:nix-community/nixvim";
-        inputs.nixpkgs.follows = "nixpkgs";
+        url = "github:jiricmi/nixvim";
     };
   };
 
