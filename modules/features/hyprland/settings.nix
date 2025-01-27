@@ -47,9 +47,6 @@ in {
 
       decoration = {
           rounding = 5;
-          drop_shadow = true;
-          shadow_range = 30;
-          shadow_render_power = 3;
         };
 
 
