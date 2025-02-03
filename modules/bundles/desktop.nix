@@ -1,4 +1,4 @@
-{pkgs, lib, ...}:
+{pkgs, ...}:
 {
   imports = [
     ./../features/base.nix
@@ -8,7 +8,22 @@
     ./../features/zsh
   ];
 
-  environment.systemPackages = with pkgs; [
-    openvpn
+  environment.systemPackages = [
   ];
+
+    services.openvpn.servers = {
+        netioVPN  = {
+            config = '' config /home/jiricmi/netio-repos/netio.ovpn
+                        askpass /home/jiricmi/netio-repos/.certpass
+                        auth-user-pass /home/jiricmi/netio-repos/.credentials
+
+                        script-security 2
+                        up ${pkgs.update-systemd-resolved}/libexec/openvpn/update-systemd-resolved
+                        up-restart
+                        down ${pkgs.update-systemd-resolved}/libexec/openvpn/update-systemd-resolved
+                        down-pre
+      '';
+            autoStart = false;
+        };
+    };
 }
