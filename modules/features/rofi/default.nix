@@ -2,7 +2,8 @@
   pkgs,
   config,
   ...
-}: {
+}:
+{
   # xdg.configFile."rofi/config.rasi".source = ./config.rasi;
 
   xdg.configFile."rofi/config.rasi".text = with config.stylix.base16Scheme; ''
@@ -337,5 +338,5 @@
     }
   '';
 
-  home.packages = with pkgs; [rofi-wayland];
+  home.packages = with pkgs; [ rofi-wayland ];
 }

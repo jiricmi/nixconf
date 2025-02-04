@@ -1,4 +1,4 @@
-{pkgs, config, lib, inputs, ...}:
+{pkgs, inputs, ...}:
 {
   imports = [
     ./../features/hyprland/settings.nix
@@ -10,5 +10,32 @@
     ./../features/lf
   ];
   stylix.enable = true;
+
+  home.packages = with pkgs; [
+    signal-desktop
+    gossip
+    brave
+    kitty
+    teams-for-linux
+    thunderbird
+    obsidian
+    keepassxc
+    okular
+    trezor-suite
+    unzip
+    zip
+    putty
+    stm32cubemx
+    inputs.nixvim.packages.x86_64-linux.default
+    lazygit
+    julia
+    khal
+    zoxide
+  ];
+
+  home.sessionVariables = {
+    EDITOR = "nvim";
+    TERMINAL = "kitty";
+  };
 
 }
