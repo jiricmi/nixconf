@@ -28,5 +28,17 @@
       '';
       autoStart = false;
     };
+    jiricmiVPN = {
+      config = ''
+        config /home/jiricmi/nix/vpns/jiricmi-vpn.ovpn
+        askpass /home/jiricmi/nix/vpns/.jiricmi-credentials
+                            script-security 2
+                            up ${pkgs.update-systemd-resolved}/libexec/openvpn/update-systemd-resolved
+                            up-restart
+                            down ${pkgs.update-systemd-resolved}/libexec/openvpn/update-systemd-resolved
+                            down-pre
+      '';
+      autoStart = false;
+    };
   };
 }
