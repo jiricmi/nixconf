@@ -1,4 +1,4 @@
-{pkgs, inputs, ...}:
+{ pkgs, inputs, ... }:
 {
   imports = [
     ./../features/hyprland/settings.nix
@@ -6,7 +6,7 @@
     ./../features/rofi
     ./../features/wlogout
     ./../features/btop.nix
-    ./../features/git.nix 
+    ./../features/git.nix
     ./../features/lf
   ];
   stylix.enable = true;
@@ -31,6 +31,7 @@
     julia
     khal
     zoxide
+    jetbrains.datagrip
   ];
 
   home.sessionVariables = {
