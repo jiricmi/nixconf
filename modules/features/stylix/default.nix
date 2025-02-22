@@ -53,6 +53,8 @@
     cursor.package = pkgs.bibata-cursors;
     cursor.size = 24;
 
+    targets.qt.enable = true;
+    targets.qt.platform = "linux";
     targets.chromium.enable = true;
     targets.grub.enable = true;
     targets.grub.useImage = true;
