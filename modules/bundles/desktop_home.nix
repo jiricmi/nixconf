@@ -13,14 +13,12 @@
 
   home.packages = with pkgs; [
     signal-desktop
-    gossip
     brave
     kitty
     teams-for-linux
     thunderbird
     obsidian
     keepassxc
-    okular
     trezor-suite
     unzip
     zip
@@ -32,6 +30,7 @@
     khal
     zoxide
     jetbrains.datagrip
+    libsForQt5.okular
   ];
 
   home.sessionVariables = {
