@@ -16,9 +16,9 @@
   services.openvpn.servers = {
     netioVPN = {
       config = ''
-        config /home/jiricmi/netio-repos/netio.ovpn
-                             askpass /home/jiricmi/netio-repos/.certpass
-                             auth-user-pass /home/jiricmi/netio-repos/.credentials
+        config /home/jiricmi/nix/vpns/netio.ovpn
+                             askpass /home/jiricmi/nix/vpns/.netio-certpass
+                             auth-user-pass /home/jiricmi/nix/vpns/.netio-credentials
 
                              script-security 2
                              up ${pkgs.update-systemd-resolved}/libexec/openvpn/update-systemd-resolved
