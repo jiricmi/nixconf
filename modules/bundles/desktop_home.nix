@@ -31,6 +31,7 @@
     zoxide
     jetbrains.datagrip
     libsForQt5.okular
+    vlc
   ];
 
   home.sessionVariables = {
