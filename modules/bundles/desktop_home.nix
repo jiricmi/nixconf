@@ -32,6 +32,7 @@
     jetbrains.datagrip
     libsForQt5.okular
     vlc
+    eagle
   ];
 
   home.sessionVariables = {
