@@ -33,6 +33,7 @@
     libsForQt5.okular
     vlc
     eagle
+    gimp
   ];
 
   home.sessionVariables = {
