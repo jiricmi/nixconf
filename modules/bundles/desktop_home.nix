@@ -34,6 +34,7 @@
     vlc
     eagle
     gimp
+    brightnessctl
   ];
 
   home.sessionVariables = {
