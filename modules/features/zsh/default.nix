@@ -1,4 +1,4 @@
-{pkgs, ...}:
+{ pkgs, ... }:
 {
   programs.zsh = {
     enable = true;
@@ -8,6 +8,8 @@
 
     promptInit = ''
       source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
+
+      eval "$(zoxide init zsh)"
     '';
 
     ohMyZsh = {
@@ -15,11 +17,11 @@
       plugins = [
         "sudo"
         "git"
-	"docker"
-	"vi-mode"
+        "docker"
+        "vi-mode"
       ];
     };
-  };   
-  
+  };
+
   users.defaultUserShell = pkgs.zsh;
 }
