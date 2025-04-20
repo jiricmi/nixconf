@@ -34,6 +34,7 @@
     vlc
     eagle
     gimp
+    fritzing
     brightnessctl
   ];
 
