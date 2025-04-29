@@ -29,6 +29,7 @@
     julia
     khal
     zoxide
+    appimage-run
     jetbrains.datagrip
     libsForQt5.okular
     vlc
