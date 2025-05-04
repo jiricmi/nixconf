@@ -1,47 +1,43 @@
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
-  imports =
-    [ 
-      ./hardware-configuration.nix
-      ./../../modules/bundles/desktop.nix
-      inputs.home-manager.nixosModules.home-manager
-    ];
+  imports = [
+    ./hardware-configuration.nix
+    ./../../modules/bundles/desktop.nix
+    inputs.home-manager.nixosModules.home-manager
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.supportedFilesystems = [ "ntfs" ];
 
-  networking.hostName = "jiricmi-desktop"; 
- 
- # Define a user account. Don't forget to set a password with ‘passwd’
-  users.users.jiricmi = {
-    isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" "audio" "docker" "dialout"];
-  };
-
-
-  services.trezord.enable = true;
+  networking.hostName = "jiricmi-desktop";
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users = {
-      "jiricmi" = import ./home.nix;   
+      "jiricmi" = import ./home.nix;
     };
   };
 
-  environment.variables.EDITOR = "nvim";
- 
-  # List packages installed in system profile. To search, run:
-  environment.systemPackages = with pkgs; [];
-
-  # Bluetooth
-  hardware.bluetooth = {
+  # Gaming
+  hardware.graphics = {
     enable = true;
-    powerOnBoot = true;
+    enable32Bit = true;
   };
-  services.blueman.enable = true;
 
+  services.xserver.videoDrivers = [ "amdgpu" ];
+  programs.steam.enable = true;
+  programs.steam.gamescopeSession.enable = true;
+  programs.gamemode.enable = true;
+
+  environment.systemPackages = with pkgs; [ mangohud ];
 
   system.stateVersion = "24.05";
 }

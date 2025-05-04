@@ -36,6 +36,8 @@
     eagle
     gimp
     fritzing
+    inkscape
+    kicad
     brightnessctl
   ];
 

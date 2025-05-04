@@ -41,4 +41,31 @@
       autoStart = false;
     };
   };
+
+  users.users.jiricmi = {
+    isNormalUser = true;
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "audio"
+      "docker"
+      "libvirtd"
+      "dialout"
+    ];
+  };
+
+  # Bluetooth
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+  };
+  services.blueman.enable = true;
+
+  services.trezord.enable = true;
+
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
+
+  environment.variables.EDITOR = "nvim";
+
 }

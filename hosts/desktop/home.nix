@@ -20,4 +20,12 @@
   home.stateVersion = "24.05"; # Please read the comment before changing.
 
   programs.home-manager.enable = true;
+
+  home.packages = with pkgs; [
+    protonup
+  ];
+
+  home.sessionVariables = {
+    STEAM_EXTRA_COMPAT_TOOLS_PATHS = "\${HOME}/.steam/root/compatibilitytools.d";
+  };
 }
