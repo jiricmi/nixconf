@@ -18,6 +18,7 @@
     teams-for-linux
     thunderbird
     obsidian
+    ventoy
     keepassxc
     trezor-suite
     unzip
