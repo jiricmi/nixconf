@@ -74,6 +74,7 @@ in
           # Custom binds
           "$mainMod, T, exec, kitty"
           "$mainMod, F, exec, rofi -show drun -show-icons"
+          "$mainMod, C, exec, julia"
           "$mainMod, Q, killactive"
           "$mainMod, B, exec, brave"
           "$mainMod, M, exit"
