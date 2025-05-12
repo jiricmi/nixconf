@@ -28,7 +28,6 @@
     inputs.nixvim.packages.x86_64-linux.default
     lazygit
     julia
-    khal
     zoxide
     appimage-run
     jetbrains.datagrip
@@ -36,9 +35,7 @@
     vlc
     eagle
     gimp
-    fritzing
     inkscape
-    kicad
     brightnessctl
     qpdf
   ];
