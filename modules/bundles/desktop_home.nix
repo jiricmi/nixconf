@@ -40,6 +40,7 @@
     inkscape
     kicad
     brightnessctl
+    qpdf
   ];
 
   home.sessionVariables = {
