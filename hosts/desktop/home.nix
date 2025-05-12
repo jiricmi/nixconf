@@ -23,6 +23,7 @@
 
   home.packages = with pkgs; [
     protonup
+    prusa-slicer
   ];
 
   home.sessionVariables = {
