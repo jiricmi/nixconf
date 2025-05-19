@@ -18,7 +18,6 @@
     teams-for-linux
     thunderbird
     obsidian
-    ventoy
     keepassxc
     trezor-suite
     unzip
@@ -38,6 +37,8 @@
     inkscape
     brightnessctl
     qpdf
+    anki
+
   ];
 
   home.sessionVariables = {
