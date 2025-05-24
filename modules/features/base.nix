@@ -5,7 +5,6 @@
 
   time.timeZone = "Europe/Prague";
 
-
   i18n.defaultLocale = "en_US.UTF-8";
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "cs_CZ.UTF-8";
@@ -18,7 +17,7 @@
     LC_TELEPHONE = "cs_CZ.UTF-8";
     LC_TIME = "cs_CZ.UTF-8";
   };
-  
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -27,10 +26,15 @@
 
   services.printing.enable = true;
 
+  services.printing.drivers = [ pkgs.epson-escpr ];
+
   virtualisation.docker.enable = true;
 
   # Experimental features
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   nixpkgs.config.allowUnfree = true;
 
