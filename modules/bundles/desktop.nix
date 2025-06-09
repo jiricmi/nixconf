@@ -71,6 +71,8 @@
   virtualisation.libvirtd.enable = true;
   programs.virt-manager.enable = true;
 
+  hardware.keyboard.qmk.enable = true;
+
   environment.variables.EDITOR = "nvim";
 
 }

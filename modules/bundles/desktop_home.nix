@@ -37,7 +37,7 @@
     inkscape
     brightnessctl
     qpdf
-    anki
+    libreoffice-still
 
   ];
 
