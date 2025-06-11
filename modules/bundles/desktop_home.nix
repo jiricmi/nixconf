@@ -17,28 +17,22 @@
     kitty
     teams-for-linux
     thunderbird
-    obsidian
     keepassxc
     trezor-suite
     unzip
     zip
     putty
-    stm32cubemx
     inputs.nixvim.packages.x86_64-linux.default
     lazygit
     julia
     zoxide
-    appimage-run
     jetbrains.datagrip
     libsForQt5.okular
     vlc
-    eagle
     gimp
     inkscape
     brightnessctl
     qpdf
-    libreoffice-still
-
   ];
 
   home.sessionVariables = {
