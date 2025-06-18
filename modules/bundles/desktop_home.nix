@@ -30,6 +30,7 @@
     libsForQt5.okular
     vlc
     gimp
+    freecad
     inkscape
     brightnessctl
     qpdf
