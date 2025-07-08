@@ -13,6 +13,8 @@
 
   home.packages = with pkgs; [
     signal-desktop
+    fastfetch
+    alacritty
     brave
     kitty
     teams-for-linux
