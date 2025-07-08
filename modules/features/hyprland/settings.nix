@@ -72,9 +72,9 @@ in
       bind =
         [
           # Custom binds
-          "$mainMod, T, exec, kitty"
+          "$mainMod, T, exec, alacritty"
           "$mainMod, F, exec, rofi -show drun -show-icons"
-          "$mainMod, C, exec, julia"
+          "$mainMod, C, exec, alacritty -e julia"
           "$mainMod, Q, killactive"
           "$mainMod, B, exec, brave"
           "$mainMod, M, exit"

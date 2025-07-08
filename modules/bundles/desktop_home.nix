@@ -16,7 +16,6 @@
     fastfetch
     alacritty
     brave
-    kitty
     teams-for-linux
     thunderbird
     keepassxc

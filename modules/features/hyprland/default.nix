@@ -1,4 +1,9 @@
-{ config, pkgs, inputs, ...}:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 {
   programs.hyprland = {
     package = inputs.hyprland.packages."${pkgs.system}".hyprland;
@@ -21,10 +26,10 @@
   };
 
   environment.systemPackages = with pkgs; [
-   pavucontrol
-   pamixer
-   slurp
-   wl-clipboard
-   grim
+    pavucontrol
+    pamixer
+    slurp
+    wl-clipboard
+    grim
   ];
 }
