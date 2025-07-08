@@ -8,7 +8,8 @@
     ./../features/zsh
   ];
 
-  environment.systemPackages = [
+  environment.systemPackages = with pkgs; [
+    usbutils
   ];
 
   services.resolved.enable = true;
@@ -67,6 +68,8 @@
   services.blueman.enable = true;
 
   services.trezord.enable = true;
+
+  services.tlp.enable = true;
 
   virtualisation.libvirtd.enable = true;
   programs.virt-manager.enable = true;
