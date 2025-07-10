@@ -34,6 +34,7 @@
     inkscape
     brightnessctl
     qpdf
+    distrobox
   ];
 
   home.sessionVariables = {
