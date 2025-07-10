@@ -52,6 +52,8 @@
       "docker"
       "libvirtd"
       "dialout"
+      "video"
+      "render"
     ];
   };
 

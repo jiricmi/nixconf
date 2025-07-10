@@ -37,6 +37,9 @@
   programs.steam.gamescopeSession.enable = true;
   programs.gamemode.enable = true;
 
+  # ROCm
+  programs.nix-ld.enable = true;
+
   environment.systemPackages = with pkgs; [ mangohud ];
 
   system.stateVersion = "24.05";
