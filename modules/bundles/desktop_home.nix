@@ -8,10 +8,8 @@ let
     thunderbird
     keepassxc
     trezor-suite
-    jetbrains.datagrip
     libsForQt5.okular
     vlc
-    gimp
     inkscape
   ];
 
@@ -27,6 +25,7 @@ let
     qpdf
     distrobox
     gemini-cli
+    nmap
   ];
 
   devTools = with pkgs; [
@@ -46,12 +45,14 @@ in
     ./../features/git.nix
     ./../features/lf
   ];
-  stylix.enable = true;
 
-  # Spojení všech seznamů do jednoho
   home.packages = guiApps ++ cliTools ++ devTools;
 
   programs.wofi.enable = true;
+
+  programs.alacritty.enable = true;
+
+  stylix.targets.alacritty.enable = true;
 
   programs.ssh = {
     enable = true;

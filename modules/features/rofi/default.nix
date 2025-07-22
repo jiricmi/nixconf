@@ -6,7 +6,7 @@
 {
   # xdg.configFile."rofi/config.rasi".source = ./config.rasi;
 
-  xdg.configFile."rofi/config.rasi".text = with config.stylix.base16Scheme; ''
+  xdg.configFile."rofi/config.rasi".text = ''
     /*****----- Configuration -----*****/
     configuration {
         show-icons:                 true;
@@ -21,11 +21,11 @@
 
     /*****----- Global Properties -----*****/
     * {
-        active-background: #${base0B};
+        active-background: #89B4FA;
         active-foreground: @foreground;
         normal-background: @background;
         normal-foreground: @foreground;
-        urgent-background: #${base08};
+        urgent-background: #F38BA8;
         urgent-foreground: @foreground;
 
         alternate-active-background: @background;
@@ -35,16 +35,16 @@
         alternate-urgent-background: @background;
         alternate-urgent-foreground: @foreground;
 
-        selected-active-background: #${base08};
+        selected-active-background: #F38BA8;
         selected-active-foreground: @foreground;
-        selected-normal-background: #${base0B};
+        selected-normal-background: #89B4FA;
         selected-normal-foreground: @foreground;
-        selected-urgent-background: #${base0A};
+        selected-urgent-background: #FAB387;
         selected-urgent-foreground: @foreground;
 
         background-color: @background;
-        background: #${base00};
-        foreground: #${base06};
+        background: #1E1E2E;
+        foreground: #CDD6F4;
         border-color: @background;
         spacing: 2;
     }

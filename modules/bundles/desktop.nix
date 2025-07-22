@@ -3,10 +3,12 @@
   imports = [
     ./../features/base.nix
     ./../features/hyprland
-    ./../features/stylix
     ./../features/fonts.nix
     ./../features/zsh
+    ./../features/stylix
   ];
+
+  stylix.enable = true;
 
   environment.systemPackages = with pkgs; [
     usbutils
