@@ -45,6 +45,18 @@
     };
   };
 
+  fileSystems."/mnt/netio" = {
+    device = "//192.168.101.20/public";
+    fsType = "cifs";
+    options = [
+      "noauto"
+      "users"
+      "guest"
+      "uid=1000"
+      "iocharset=utf8"
+    ];
+  };
+
   users.users.jiricmi = {
     isNormalUser = true;
     extraGroups = [

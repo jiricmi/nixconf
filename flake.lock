@@ -838,11 +838,11 @@
         "pre-commit-hooks": "pre-commit-hooks_2"
       },
       "locked": {
-        "lastModified": 1753210614,
-        "narHash": "sha256-Gn2+Nm9kZoX89cHqXsHHD2z+54Z0L6Sojopqrkb/NYc=",
+        "lastModified": 1753877637,
+        "narHash": "sha256-LGncfRRRRuOEnLLoEKr/1eMUG/QeqoV4KVnn/ouSGqY=",
         "owner": "jiricmi",
         "repo": "nixvim",
-        "rev": "07d73a06e8dd137c0aa0882410329754cfefccb0",
+        "rev": "8c2150a525ad8d1fc2fbab87bdc56d379a82532b",
         "type": "github"
       },
       "original": {
