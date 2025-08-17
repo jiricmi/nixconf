@@ -11,6 +11,7 @@ let
     libsForQt5.okular
     vlc
     inkscape
+    anytype
   ];
 
   cliTools = with pkgs; [
