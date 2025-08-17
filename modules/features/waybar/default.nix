@@ -2,7 +2,8 @@
   pkgs,
   config,
   ...
-}: let
+}:
+let
   workspaces = {
     format = "{icon}";
     format-icons = {
@@ -17,8 +18,8 @@
   };
 
   "hyprland/window" = {
-      "format" = "{}";
-      "separate-outputs" = true;
+    "format" = "{}";
+    "separate-outputs" = true;
   };
 
   mainWaybarConfig = {
@@ -28,7 +29,10 @@
     height = 20;
     position = "top";
 
-    modules-left = ["hyprland/workspaces" "hyprland/window"];
+    modules-left = [
+      "hyprland/workspaces"
+      "hyprland/window"
+    ];
     modules-right = [
       "tray"
       "hyprland/language"
@@ -92,39 +96,51 @@
       };
       format = "󰥔  {:%H:%M:%S}";
       format-alt = "  {:%A, %B %d, %Y (%R)} ";
-      tooltip-format = ''
-        <span size='9pt' font='WenQuanYi Zen Hei Mono'>{calendar}</span>'';
+      tooltip-format = ''<span size='9pt' font='WenQuanYi Zen Hei Mono'>{calendar}</span>'';
       interval = 1;
     };
 
     battery = {
-        states = {
-            "warning" = 30;
-            "critical" = 15;
-        };
-        format = "   {capacity}%";
-        format-charging = "   {capacity}%";
-        format-plugged = "   {capacity}%";
-        format-alt = "{time} {icon}";
+      states = {
+        "warning" = 30;
+        "critical" = 15;
+      };
+      format = "   {capacity}%";
+      format-charging = "   {capacity}%";
+      format-plugged = "   {capacity}%";
+      format-alt = "{time} {icon}";
     };
 
     cpu = {
       format = "󰍛 {usage}%";
       format-alt = "{icon0}{icon1}{icon2}{icon3}";
-      format-icons = ["▁" "▂" "▃" "▄" "▅" "▆" "▇" "█"];
+      format-icons = [
+        "▁"
+        "▂"
+        "▃"
+        "▄"
+        "▅"
+        "▆"
+        "▇"
+        "█"
+      ];
       interval = 10;
     };
 
     temperature = {
-        critical-threshold = 80;
-        interval = 2;
-        format = " {temperatureC}°C";
-        format-icons = ["" "" ""];
+      critical-threshold = 80;
+      interval = 2;
+      format = " {temperatureC}°C";
+      format-icons = [
+        ""
+        ""
+        ""
+      ];
     };
-    
+
     disk = {
-        interval = 15;
-        format = "󰋊 {percentage_used}%";
+      interval = 15;
+      format = "󰋊 {percentage_used}%";
     };
 
     "hyprland/language" = {
@@ -150,14 +166,18 @@
       interval = 5;
       max-length = 36;
       tooltip-format = "󱘖 {ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}";
-      on-click = "kitty nmtui";
+      on-click = "alacritty -e nmtui";
     };
 
     "pulseaudio" = {
       format = "{icon}  {volume}%";
       format-icons = {
         car = " ";
-        default = ["" "" ""];
+        default = [
+          ""
+          ""
+          ""
+        ];
         hands-free = " ";
         headphone = " ";
         headset = " ";
@@ -236,7 +256,7 @@
         animation: gradient_f 20s ease-in infinite;
         transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
     }
-    
+
     #battery {
       color: @green_1;
     }
@@ -368,13 +388,16 @@
         padding-right: 4px;
     }
   '';
-in {
+in
+{
   programs.waybar = {
     enable = true;
     package = pkgs.waybar.overrideAttrs (oldAttrs: {
-      mesonFlags = oldAttrs.mesonFlags ++ ["-Dexperimental=true"];
+      mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
     });
     style = css;
-    settings = {mainBar = mainWaybarConfig;};
+    settings = {
+      mainBar = mainWaybarConfig;
+    };
   };
 }
