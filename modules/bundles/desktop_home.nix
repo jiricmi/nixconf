@@ -8,7 +8,6 @@ let
     thunderbird
     keepassxc
     trezor-suite
-    libsForQt5.okular
     vlc
     inkscape
     anytype
