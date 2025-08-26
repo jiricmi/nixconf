@@ -12,6 +12,7 @@ let
     vlc
     inkscape
     anytype
+    portfolio
   ];
 
   cliTools = with pkgs; [
