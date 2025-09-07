@@ -16,6 +16,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.supportedFilesystems = [ "ntfs" ];
+  boot.extraModulePackages = [ config.boot.kernelPackages.rtl88xxau-aircrack ];
   boot.initrd.luks.devices."luks-20da37b8-0997-4081-b814-19a338b2b0c8".device =
     "/dev/disk/by-uuid/20da37b8-0997-4081-b814-19a338b2b0c8";
 
