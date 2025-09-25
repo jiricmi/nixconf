@@ -27,7 +27,7 @@
     };
   };
 
-  services.logind.lidSwitch = "ignore";
+  services.logind.settings.Login.HandleLidSwitch = "ignore";
 
   services.tlp.settings = {
     START_CHARGE_THRESH_BAT0 = 60;

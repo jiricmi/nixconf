@@ -338,5 +338,5 @@
     }
   '';
 
-  home.packages = with pkgs; [ rofi-wayland ];
+  home.packages = with pkgs; [ rofi ];
 }

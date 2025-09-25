@@ -19,7 +19,7 @@
   stylix.targets.qt.platform = "qtct";
   stylix.targets.chromium.enable = true;
   stylix.targets.grub.enable = true;
-  stylix.targets.grub.useImage = true;
+  stylix.targets.grub.useWallpaper = true;
   stylix.image = ./pinkfloyd.jpg;
   stylix.targets.plymouth.enable = true;
 }

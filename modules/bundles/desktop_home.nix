@@ -27,6 +27,7 @@ let
     distrobox
     gemini-cli
     nmap
+    fd
   ];
 
   devTools = with pkgs; [
