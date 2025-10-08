@@ -28,6 +28,7 @@ let
     gemini-cli
     nmap
     fd
+    gurk-rs
   ];
 
   devTools = with pkgs; [
@@ -45,6 +46,7 @@ in
     ./../features/wlogout
     ./../features/btop.nix
     ./../features/git.nix
+    ./../features/tmux.nix
     ./../features/lf
   ];
 
