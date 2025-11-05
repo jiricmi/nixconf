@@ -10,7 +10,6 @@ let
     trezor-suite
     vlc
     inkscape
-    anytype
     portfolio
   ];
 
@@ -24,11 +23,11 @@ let
     zip
     brightnessctl
     qpdf
-    distrobox
     gemini-cli
     nmap
     fd
     gurk-rs
+    openocd
   ];
 
   devTools = with pkgs; [
