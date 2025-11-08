@@ -36,9 +36,9 @@
   };
 
   services.xserver.videoDrivers = [ "amdgpu" ];
-  programs.steam.enable = true;
-  programs.steam.gamescopeSession.enable = true;
-  programs.gamemode.enable = true;
+  #programs.steam.enable = true;
+  #programs.steam.gamescopeSession.enable = true;
+  #programs.gamemode.enable = true;
 
   # ROCm
   programs.nix-ld.enable = true;
