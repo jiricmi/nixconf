@@ -20,14 +20,14 @@
   home.stateVersion = "24.05"; # Please read the comment before changing.
 
   programs.home-manager.enable = true;
-  
+
   services.ollama = {
     enable = true;
     acceleration = "rocm";
   };
 
   home.packages = with pkgs; [
-    protonup
+    protonup-ng
     prusa-slicer
   ];
 
