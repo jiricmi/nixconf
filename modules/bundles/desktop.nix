@@ -73,7 +73,7 @@
 
   nix.gc = {
     automatic = true;
-    options = "--delete-older-than 14d";
+    options = "--delete-older-than 30d";
   };
 
   # Bluetooth
@@ -89,6 +89,7 @@
 
   virtualisation.libvirtd.enable = true;
   programs.virt-manager.enable = true;
+  programs.zoxide.enable = true;
 
   hardware.keyboard.qmk.enable = true;
 

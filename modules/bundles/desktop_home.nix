@@ -17,15 +17,16 @@ let
     fastfetch
     alacritty
     lazygit
-    zoxide
     putty
     unzip
     zip
     brightnessctl
     qpdf
+    dust
     gemini-cli
     nmap
     fd
+    ripgrep
     gurk-rs
     openocd
   ];
@@ -46,6 +47,9 @@ in
     ./../features/btop.nix
     ./../features/git.nix
     ./../features/tmux.nix
+    ./../features/eza.nix
+    ./../features/bat.nix
+    ./../features/zoxide.nix
     ./../features/lf
   ];
 
@@ -59,6 +63,11 @@ in
 
   programs.ssh = {
     enable = true;
+  };
+
+  programs.direnv = {
+    enable = true;
+    nix-direnv.enable = true;
   };
 
   home.sessionVariables = {
