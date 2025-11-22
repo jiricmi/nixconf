@@ -7,10 +7,9 @@ let
     teams-for-linux
     thunderbird
     keepassxc
-    trezor-suite
     vlc
     inkscape
-    portfolio
+    dbeaver-bin
   ];
 
   cliTools = with pkgs; [

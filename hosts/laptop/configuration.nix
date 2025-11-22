@@ -37,6 +37,8 @@
     STOP_CHARGE_THRESH_BAT1 = 80;
   };
 
+  services.trezord.enable = true;
+
   environment.systemPackages = with pkgs; [
   ];
 

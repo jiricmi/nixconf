@@ -83,8 +83,6 @@
   };
   services.blueman.enable = true;
 
-  services.trezord.enable = true;
-
   services.tlp.enable = true;
 
   virtualisation.libvirtd.enable = true;
