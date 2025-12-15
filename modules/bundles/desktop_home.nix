@@ -64,6 +64,13 @@ in
     enable = true;
   };
 
+  programs.gpg.enable = true;
+  services.gpg-agent = {
+    enable = true;
+    enableSshSupport = true;
+    pinentryPackage = pkgs.pinentry-curses;
+  };
+
   programs.direnv = {
     enable = true;
     nix-direnv.enable = true;
