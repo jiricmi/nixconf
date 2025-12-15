@@ -28,6 +28,8 @@ let
     ripgrep
     gurk-rs
     openocd
+    arp-scan
+    picocom
   ];
 
   devTools = with pkgs; [
