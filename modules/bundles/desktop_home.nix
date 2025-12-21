@@ -11,6 +11,8 @@ let
     inkscape
     dbeaver-bin
     discord
+    kicad
+    freecad
   ];
 
   cliTools = with pkgs; [
