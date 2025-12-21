@@ -10,6 +10,7 @@ let
     vlc
     inkscape
     dbeaver-bin
+    discord
   ];
 
   cliTools = with pkgs; [
