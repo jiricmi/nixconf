@@ -74,6 +74,23 @@
     ];
   };
 
+  fileSystems."/mnt/jiricmi-server/photos" = {
+    device = "//29.31.10.205/photos";
+    fsType = "cifs";
+    options = [
+      "credentials=/home/jiricmi/nix/vpns/.smb_conf_credentials"
+      "uid=1000"
+      "gid=100"
+      "file_mode=0700"
+      "dir_mode=0700"
+      "x-systemd.automount"
+      "noauto"
+      "x-systemd.idle-timeout=60"
+      "x-systemd.device-timeout=5s"
+      "x-systemd.mount-timeout=5s"
+    ];
+  };
+
   users.users.jiricmi = {
     isNormalUser = true;
     extraGroups = [
