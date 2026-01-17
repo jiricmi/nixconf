@@ -13,6 +13,7 @@ let
     discord
     kicad
     freecad
+    obsidian
   ];
 
   cliTools = with pkgs; [
