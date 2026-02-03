@@ -13,6 +13,7 @@ let
     discord
     kicad
     freecad
+    obsidian
   ];
 
   cliTools = with pkgs; [
@@ -29,7 +30,6 @@ let
     nmap
     fd
     ripgrep
-    gurk-rs
     openocd
     arp-scan
     picocom
@@ -38,6 +38,7 @@ let
   devTools = with pkgs; [
     inputs.nixvim.packages.x86_64-linux.default
     julia
+    python314
     mdbook
   ];
 

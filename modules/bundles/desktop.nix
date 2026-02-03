@@ -58,7 +58,7 @@
   };
 
   fileSystems."/mnt/jiricmi-server/confident" = {
-    device = "//29.31.10.205/confident";
+    device = "//29.31.10.55/confident";
     fsType = "cifs";
     options = [
       "credentials=/home/jiricmi/nix/vpns/.smb_conf_credentials"
@@ -75,7 +75,7 @@
   };
 
   fileSystems."/mnt/jiricmi-server/photos" = {
-    device = "//29.31.10.205/photos";
+    device = "//29.31.10.55/photos";
     fsType = "cifs";
     options = [
       "credentials=/home/jiricmi/nix/vpns/.smb_conf_credentials"
