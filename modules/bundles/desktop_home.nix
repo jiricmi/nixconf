@@ -29,6 +29,7 @@ let
     gemini-cli
     claude-code
     nmap
+    inetutils
     fd
     ripgrep
     openocd
