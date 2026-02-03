@@ -27,6 +27,7 @@ let
     qpdf
     dust
     gemini-cli
+    claude-code
     nmap
     fd
     ripgrep
