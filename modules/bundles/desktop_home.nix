@@ -11,8 +11,6 @@ let
     inkscape
     dbeaver-bin
     discord
-    kicad
-    freecad
     obsidian
   ];
 

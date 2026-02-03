@@ -29,6 +29,8 @@
   home.packages = with pkgs; [
     protonup-ng
     prusa-slicer
+    freecad
+    kicad
   ];
 
   home.sessionVariables = {
