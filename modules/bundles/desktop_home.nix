@@ -12,6 +12,7 @@ let
     dbeaver-bin
     discord
     obsidian
+    antigravity
   ];
 
   cliTools = with pkgs; [
