@@ -20,6 +20,6 @@
   stylix.targets.chromium.enable = true;
   stylix.targets.grub.enable = true;
   stylix.targets.grub.useWallpaper = true;
-  stylix.image = ./pinkfloyd.jpg;
+  stylix.image = ./ow.png;
   stylix.targets.plymouth.enable = true;
 }
