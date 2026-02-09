@@ -16,6 +16,7 @@ let
   ];
 
   cliTools = with pkgs; [
+    rclone
     fastfetch
     alacritty
     lazygit
