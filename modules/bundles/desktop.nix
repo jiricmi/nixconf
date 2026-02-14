@@ -68,6 +68,10 @@
       "dialout"
       "video"
       "render"
+      "fuse"
+      "lp"
+      "scanner"
+      "input"
     ];
   };
 
