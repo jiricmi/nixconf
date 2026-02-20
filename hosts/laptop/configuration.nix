@@ -18,6 +18,9 @@
   boot.initrd.luks.devices."luks-5e1f91b2-e5c5-4e5a-84ed-800972e5073a".device =
     "/dev/disk/by-uuid/5e1f91b2-e5c5-4e5a-84ed-800972e5073a";
 
+  boot.initrd.luks.devices."luks-cfbafba6-62bd-47ea-8fef-7631551bc4d4".device =
+    "/dev/disk/by-uuid/cfbafba6-62bd-47ea-8fef-7631551bc4d4";
+
   networking.hostName = "jiricmi-laptop";
 
   home-manager = {
