@@ -15,8 +15,8 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.supportedFilesystems = [ "ntfs" ];
 
-  boot.initrd.luks.devices."luks-cfbafba6-62bd-47ea-8fef-7631551bc4d4".device =
-    "/dev/disk/by-uuid/cfbafba6-62bd-47ea-8fef-7631551bc4d4";
+  boot.initrd.luks.devices."luks-5e1f91b2-e5c5-4e5a-84ed-800972e5073a".device =
+    "/dev/disk/by-uuid/5e1f91b2-e5c5-4e5a-84ed-800972e5073a";
 
   networking.hostName = "jiricmi-laptop";
 
@@ -31,10 +31,8 @@
 
   services.tlp.settings = {
     START_CHARGE_THRESH_BAT0 = 60;
-    START_CHARGE_THRESH_BAT1 = 60;
 
     STOP_CHARGE_THRESH_BAT0 = 80;
-    STOP_CHARGE_THRESH_BAT1 = 80;
   };
 
   services.trezord.enable = true;
